@@ -6,7 +6,7 @@ $(function(){
         var share = function() {
             shareJson = {
                 link:"http://200703.qingdianer.com",
-                imgUrl:"http://200703.qingdianer.com/static/image/share.jpg",
+                imgUrl:"http://200703.qingdianer.com/static/image/invite-logo.png",
                 title:"2007级三班聚会邀请函",
                 desc:"亲爱的同学们，在我们阔别了9年之后，让我们再次重逢吧~"
 
