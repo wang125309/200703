@@ -1803,7 +1803,7 @@ window.onload = function(){
     };
     $(".botton").on("tap",function(){
         if($("#name").val().length && $("#time").val().length) {
-            $.get("/backend/upload/",{
+            $.get("/upload/",{
                 "name" : $("#name").val(),
                 "time" : $("#time").val(),
                 "other" : $("#other").val()
@@ -1853,5 +1853,5 @@ window.onload = function(){
 }
 
 },{"../../bower_components/swiper/dist/js/swiper.min.js":1,"../../bower_components/velocity/velocity.min.js":2,"../../bower_components/zepto/zepto.js":3,"../../bower_components/zeptojs/src/touch.js":4,"../js/share.min.js":6}],6:[function(require,module,exports){
-!function n(r,e,o){function t(c,u){if(!e[c]){if(!r[c]){var f="function"==typeof require&&require;if(!u&&f)return f(c,!0);if(i)return i(c,!0);throw new Error("Cannot find module '"+c+"'")}var a=e[c]={exports:{}};r[c][0].call(a.exports,function(n){var e=r[c][1][n];return t(e?e:n)},a,a.exports,n,r,e,o)}return e[c].exports}for(var i="function"==typeof require&&require,c=0;c<o.length;c++)t(o[c]);return t}({1:[function(){$(function(){$.post("/wx/portal/wxconfig/",{url:location.href},function(n){wx.config(n);var r=function(){shareJson={link:"http://cm.qingdianer.com",imgUrl:"http://cm.qingdianer.com/static/image/share.jpg",title:"一字千金",desc:"中国移动车联网活动来啦~"},wx.onMenuShareTimeline(shareJson),wx.onMenuShareAppMessage(shareJson)};wx.ready(function(){r()}),wx.error(function(){$.get("/wx/portal/update_access_token/",function(){$.post("/wx/portal/wxconfig/",{url:location.href},function(n){wx.config(n),wx.ready(function(){r()})})})})})})},{}]},{},[1]);
+!function n(r,e,o){function t(u,f){if(!e[u]){if(!r[u]){var a="function"==typeof require&&require;if(!f&&a)return a(u,!0);if(i)return i(u,!0);throw new Error("Cannot find module '"+u+"'")}var c=e[u]={exports:{}};r[u][0].call(c.exports,function(n){var e=r[u][1][n];return t(e?e:n)},c,c.exports,n,r,e,o)}return e[u].exports}for(var i="function"==typeof require&&require,u=0;u<o.length;u++)t(o[u]);return t}({1:[function(){$(function(){$.post("/wx/portal/wxconfig/",{url:location.href},function(n){wx.config(n);var r=function(){shareJson={link:"http://200703.qingdianer.com",imgUrl:"http://200703.qingdianer.com/static/image/share.jpg",title:"2007级三班聚会邀请函",desc:"亲爱的同学们，在我们阔别了9年之后，让我们再次重逢吧~"},wx.onMenuShareTimeline(shareJson),wx.onMenuShareAppMessage(shareJson)};wx.ready(function(){r()}),wx.error(function(){$.get("/wx/portal/update_access_token/",function(){$.post("/wx/portal/wxconfig/",{url:location.href},function(n){wx.config(n),wx.ready(function(){r()})})})})})})},{}]},{},[1]);
 },{}]},{},[5])
