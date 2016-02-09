@@ -1803,7 +1803,7 @@ window.onload = function(){
     };
     $(".botton").on("tap",function(){
         if($("#name").val().length && $("#time").val().length) {
-            $.get("/upload/",{
+            $.get("/backend/upload/",{
                 "name" : $("#name").val(),
                 "time" : $("#time").val(),
                 "other" : $("#other").val()
