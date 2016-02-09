@@ -1,0 +1,56 @@
+include ./lib/header.jade
+    script.
+        !(function() {
+            var rem;
+            rem = function() {
+                document.documentElement.style.fontSize = (document.documentElement.clientWidth || document.documentElement.clientWidth) + 'px';
+            };
+            rem();
+            window.addEventListener('resize', rem, false);
+            var _hmt = _hmt || []
+        })();
+
+    link(href="/static/css/index.css",rel="stylesheet",type="text/css")
+    body
+        audio#audio(src="/static/image/background.mp3",loop="loop")
+        div.share=""
+        section.swiper-container
+            section.swiper-wrapper
+                section.swiper-slide(class="page page1")
+                    div.background=""
+                    div.invite-title=""
+                    div.invite-logo=""
+                    div.flower1=""
+                    div.flower2=""
+                    div.invite-bottom=""
+                section.swiper-slide(class="page page2")
+                    div.background=""
+                section.swiper-slide(class="page page3")
+                    div.background=""
+                section.swiper-slide(class="page page4")
+                    div.background=""
+                section.swiper-slide(class="page page5")
+                    div.background=""
+                section.swiper-slide(class="page page6")
+                    div.background=""
+                    div.p6-input
+                        input#name(type="text")=""
+                        input#time(type="text")=""
+                        input#other(type="text")=""
+                    div.invite-title=""
+                    div.invite-logo=""
+                    div.flower1=""
+                    div.flower2=""
+                    div.invite-bottom=""
+                    div.botton="" 
+    script(language="javascript",src="/static/js/index.min.js")
+    script(language="javascript",src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js")
+    script.
+        var _hmt = _hmt || [];
+        (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?4c441feac486a1b850215082f32d93e2";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+
+        })();
