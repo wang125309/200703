@@ -5,10 +5,10 @@ $(function(){
 		wx.config(data);
         var share = function() {
             shareJson = {
-                link:"http://cm.qingdianer.com",
-                imgUrl:"http://cm.qingdianer.com/static/image/share.jpg",
-                title:"一字千金",
-                desc:"中国移动车联网活动来啦~"
+                link:"http://200703.qingdianer.com",
+                imgUrl:"http://200703.qingdianer.com/static/image/share.jpg",
+                title:"2007级三班聚会邀请函",
+                desc:"亲爱的同学们，在我们阔别了9年之后，让我们再次重逢吧~"
 
             };
 			wx.onMenuShareTimeline(shareJson);
